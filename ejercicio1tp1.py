@@ -25,7 +25,12 @@ for i in range(0, times):
     elif operator == "*":
         result2 = number_1 * number_2
     elif operator == "/" and number_2 == 0:
-        print(f"me autoboicotie y quiero divir por cero, tu suerte le gano a la matrix!")
+        print(f"Casi... pensaste que iba a dividir por cero!!!"
+              " para seguir la diversion busquemos otro denominador.")
+        number_2 = randrange(1,9)
+        print(f"¿Cuánto es {number_1} {operator} {number_2}?")
+        result = float(input("resultado: "))
+        result2 = number_1 / (number_2) 
     else :
         result2 = number_1 / number_2
 
